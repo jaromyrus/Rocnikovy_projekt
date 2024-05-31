@@ -8,6 +8,7 @@ def graf(odpoved):
   plt.plot(mesice,roky[odpoved],color="#5a7d9a", marker="o")
   plt.title(f"Tržby za rok {odpoved}")
   plt.ylabel("Tržby v Kč")
+  plt.xlabel("Měsíc v roce")
   plt.xticks(rotation=45)
   plt.show()
 
@@ -41,6 +42,7 @@ def porovnani(odpoved):
       plt.plot(mesice,roky[porovnani_odpoved],color="#52bd19", marker="o", label = porovnani_odpoved)
       plt.title(f"Porovnání roku {odpoved} a {porovnani_odpoved}")
       plt.ylabel("Tržby v Kč")
+      plt.xlabel("Měsíc v roce")
       plt.xticks(rotation=45)
       plt.legend()
       plt.show()
